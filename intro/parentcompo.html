@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="app"></div>
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js"></script>
+
+    <script type="text/babel">
+        const Clock = function() {
+            return <h1>This is a clock</h1>;
+        }
+
+        const Test = function() {
+            return <h1>This is a test</h1>;
+        }
+
+        const Shop = function() {
+            return <h1>This is a shop</h1>;
+        }
+
+        const App = function() {
+            return <div>
+                <Clock />
+                <Test />
+                <Shop />
+                </div>;
+        }
+
+        ReactDOM.render( <App />, document.getElementById('app'));
+    </script>
+</body>
+</html>
